@@ -1,0 +1,470 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+* hr {
+  margin-top: 0.2rem;
+  margin-bottom: 10px;
+  width: 95%;
+  border: none;
+  background-color: #333;
+  height: 2px;
+}
+
+.container {
+  padding: 0 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  width: 900px;
+  margin-top: 50px;
+}
+
+header .photo {
+  display: inline-block;
+  width: 200px;
+  border-radius: 50%;
+}
+
+header .title {
+  margin-top: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 110px;
+}
+
+header .title h1 {
+  display: inline-block;
+  font-size: 3rem;
+}
+
+header .title p {
+  display: inline-block;
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.content {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 900px;
+}
+
+.content .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 40%;
+  height: 100%;
+}
+
+.content .left .contacts {
+  font-size: 1rem;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.content .left .contacts .contact-item {
+  margin: 0.3rem 0;
+}
+
+.content .left .contacts i {
+  display: inline-block;
+  margin-right: 1rem;
+  width: 1rem;
+}
+
+.content .left .contacts p {
+  display: inline-block;
+}
+
+.content .left .contacts a {
+  text-decoration: none;
+  color: black;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.content .left .contacts a:hover {
+  color: red;
+}
+
+.content .left .about-me {
+  width: 100%;
+}
+
+.content .left .about-me h2 {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+.content .left .about-me p {
+  padding: 0px 5px 10px;
+  font-size: 0.8rem;
+}
+
+.content .left .skills {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.content .left .skills h2 {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+.content .left .skills .skills-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.content .left .skills .skills-list .skill {
+  width: 100%;
+  display: inline-block;
+  padding: 0px 15px 10px 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.content .left .skills .skills-list .skill .stars:hover .fa-star {
+  color: yellowgreen;
+}
+
+.content .left .skills .skills-list .skill .fa-star {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  padding: 0px 2px;
+}
+
+.content .left .languages {
+  width: 100%;
+}
+
+.content .left .languages h2 {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+.content .left .languages .lng {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.content .left .languages .lng i,
+.content .left .languages .lng p {
+  display: inline-block;
+  padding-left: 10px;
+}
+
+.content .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 30px;
+  width: 60%;
+  height: 100%;
+}
+
+.content .right .experience {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.content .right .experience h2 {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+.content .right .experience .exp {
+  margin: 5px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-transition: all 0.4s ease, padding-right 0s;
+  transition: all 0.4s ease, padding-right 0s;
+}
+
+.content .right .experience .exp:hover {
+  padding: 10px;
+  background-color: whitesmoke;
+  border-radius: 5%;
+}
+
+.content .right .experience .exp:hover .description p {
+  padding-right: 0px;
+}
+
+.content .right .experience .exp .period {
+  color: #868686;
+  min-width: 120px;
+}
+
+.content .right .experience .exp .description {
+  padding-left: 20px;
+  width: 100%;
+}
+
+.content .right .experience .exp .description h2,
+.content .right .experience .exp .description h3,
+.content .right .experience .exp .description h4 {
+  margin-bottom: 3px;
+}
+
+.content .right .experience .exp .description h2 {
+  font-weight: 700;
+}
+
+.content .right .experience .exp .description p {
+  margin-bottom: 10px;
+  padding-right: 10px;
+}
+
+.content .right .education {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.content .right .education h2 {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+.content .right .education .exp {
+  margin: 5px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.content .right .education .exp .period {
+  color: #868686;
+  min-width: 120px;
+}
+
+.content .right .education .exp .description {
+  padding-left: 20px;
+  width: 100%;
+}
+
+.content .right .education .exp .description h2,
+.content .right .education .exp .description h3,
+.content .right .education .exp .description h4 {
+  margin-bottom: 3px;
+}
+
+@media (max-width: 700px) {
+  hr {
+    width: 100%;
+  }
+  header {
+    margin-top: 1rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .title {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0;
+  }
+  header .title h1 {
+    display: inline-block;
+    margin-top: 0.8rem;
+    font-size: 1.5rem;
+  }
+  header .title p {
+    margin-top: 0.1rem;
+    font-size: 1rem;
+  }
+  .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .content .left,
+  .content .right {
+    width: 100%;
+  }
+  .content .left .contacts {
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 0.7rem;
+  }
+  .content .left .contacts .contact-item {
+    width: 50%;
+  }
+  .content .left .contacts i {
+    margin-right: 1px;
+  }
+  .content .left .skills .skills-list .skill .stars .fa-star {
+    padding: 0px 2px;
+    font-size: 0.7rem;
+  }
+  .content .right {
+    margin-left: 0px;
+  }
+  .content .right .exp {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .content .right .exp .period {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    margin-bottom: 10px;
+  }
+  .content .right .exp .period h3,
+  .content .right .exp .period h4 {
+    display: inline-block;
+  }
+  .content .right .exp .period h4 {
+    padding-left: 10px;
+  }
+}
+
+@media (max-width: 325px) {
+  .content .left .contacts {
+    display: block;
+  }
+  .content .left .contacts .contact-item {
+    width: 100%;
+  }
+}
+
+@media (max-width: 300px) {
+  .content .left .skills {
+    display: none;
+  }
+  .content .right .experience .exp .description {
+    padding-left: 0px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
